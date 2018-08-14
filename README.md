@@ -73,3 +73,5 @@ npm install --save-dev style-loader css-loader
     在全局用script  在单文件用一样用import   然后在配置中externals
 
     大坑  src 引入jquery  必须在bundle之前引入
+
+    测试
