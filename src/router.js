@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import HomeContainer from './components/HomeContainer.vue'
-import MemberContainer from './components/MemberContainer.vue'
-import SearchContainer from './components/SearchContainer.vue'
-import ShopcarContainer from './components/ShopcarContainer.vue'
+import HomeContainer from './components/tabbar/HomeContainer.vue'
+import MemberContainer from './components/tabbar/MemberContainer.vue'
+import SearchContainer from './components/tabbar/SearchContainer.vue'
+import ShopcarContainer from './components/tabbar/ShopcarContainer.vue'
+import NewsList from './components/news/NewsList.vue'
+import NewInfo from './components/news/NewInfo.vue'
 // 安装路由
 Vue.use(VueRouter)
 var router = new VueRouter({
@@ -32,6 +34,15 @@ var router = new VueRouter({
             // name: 'search',
             path: '/search',
             component: SearchContainer
+        },
+        {
+            path:'/home/newslist',
+            component:NewsList
+        },
+        {
+            name:'newinfo',
+            path:'/home/:newId/newinfo',
+            component:NewInfo
         }
     ],
 })

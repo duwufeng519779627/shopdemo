@@ -29,10 +29,10 @@
 </template>
 
 <script>
-import HomeContainer from "./components/HomeContainer.vue";
-import MemberContainer from "./components/MemberContainer.vue";
-import SearchContainer from "./components/SearchContainer.vue";
-import ShopcarContainer from "./components/ShopcarContainer.vue";
+import HomeContainer from "./components/tabbar/HomeContainer.vue";
+import MemberContainer from "./components/tabbar/MemberContainer.vue";
+import SearchContainer from "./components/tabbar/SearchContainer.vue";
+import ShopcarContainer from "./components/tabbar/ShopcarContainer.vue";
 export default {
   components: {
     HomeContainer,
@@ -46,6 +46,7 @@ export default {
 <style>
 .app-container {
   padding-top: 40px;
+  padding-bottom: 40px;
   	overflow-x: hidden;
 }
 .v-enter{

@@ -19,6 +19,15 @@ Vue.component(SwipeItem.name, SwipeItem);
 
 // 导入路由模块
 import router from './router.js'
+
+//导入moment插件
+import moment from 'moment'
+
+//定义全局过滤器
+Vue.filter('dataFormat',function (dataString,pattern="YY-MM-DD HH:mm:ss") {
+    return moment(dataString).format(pattern)
+})
+
 var vm = new Vue({
     el: '#app',
     render: function (r1) {
