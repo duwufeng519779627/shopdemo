@@ -3,7 +3,7 @@ import Vue from 'vue'
 // 导入根组件
 import App from './App.vue'
 
-
+//axios不要在这里引用 在vue文件里引用即可
 
 // 导入css文件
 import './lib/mui-master/dist/css/mui.min.css'
